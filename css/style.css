@@ -1,0 +1,1117 @@
+@charset "UTF-8";
+
+/*ベース--------------------------------------------------------*/
+html{
+    font-size: 62.5%;/*rem指定にしたいため*/
+}
+body{
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+.wrap {
+	overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+h1{
+    font-size: 2.4rem;
+
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+span.label-right{
+    font-size: 1.4rem;
+    background: #0C449B 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: #FFFFFF;
+}
+.section-title-bottom{
+    color: #3BA6C9;
+    font-size: 1.6rem;
+}
+.contact-white-text{
+    color: #FFFFFF;
+}
+
+.background-color-base{
+    background-color: #EEFBFB;
+    
+}
+.background-color-baseContact{
+    width: 100%;
+    background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+}
+/*お問い合わせボタン*/
+.link-btn,
+.submit-btn{
+    background: transparent linear-gradient( #FA41CC 0%, #6020B0 100%);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    color: #FFFFFF;
+    width: 155px;
+    font-size: 14px;
+    display: block;
+    line-height: 37px;/*縦中央寄せ*/
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+    outline: none;
+}
+/*hoverイベント*/
+.link-btn:hover,
+.submit-btn:hover{
+    color: #F2F2F2;
+    background: transparent linear-gradient( #FA41CC 15%, #6020B0 100%);
+
+}
+.nav-item a:hover{
+    color: #707070;
+}
+/*-------------------------------------------------------*/
+/*レイアウト--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*ページ内ジャンプ*/
+h2[id]{
+    display: block;
+    padding-top: 100px;
+    margin-top: -100px;
+    content: "";
+}
+
+
+
+.header{
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-inner{
+    width: 100%;
+}
+.main{
+    max-width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.background-color-base{
+    width: 100%;
+}
+.background-color-baseContact{
+    width: 100%;
+}
+.section-wrapper{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fv{
+    margin-bottom: 226px;
+}
+.features-container{
+    width: 1039px;
+    margin: 0 auto;
+    
+}
+.section-inner{
+    padding-bottom: 68px;
+    margin-top: 154px;
+}
+.section-blogInner{
+    padding-bottom: 91px;
+}
+.section-inner,
+.section-blogInner{
+    padding-top: 55px;
+    margin-bottom: 55px;
+}
+.section-contactInner{
+    padding-top: 63px;
+    padding-bottom: 105px;
+    margin-bottom: 43px;
+}
+.footer{
+    padding-bottom: 49px;
+}
+.works-card{
+    padding-top: 68px;
+    padding-bottom: 90px;
+}
+.accordion{
+    margin-bottom: 86px;
+}
+/*hoverイベント*/
+
+/*-------------------------------------------------------*/
+/*モジュール--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*---------------*/
+/*header---------*/
+/*---------------*/
+.header{
+    box-shadow: 0px 3px 6px #00000029;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    width: 1022px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 192px;
+    
+}
+.header-inner-left{
+    display: flex;
+    align-items: center;
+}
+.header-inner img{
+    width: 47px;
+    height: 47px;
+}
+.header-title{
+    padding-left: 16px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    padding-left: 46px;
+    font-weight: bold;
+}
+.nav-item:first-of-type{
+    padding-left: 0;
+}
+.header-nav{
+    display: block;
+}
+
+/*---------*/
+/*fv---------*/
+/*---------------*/
+.fv{
+    display: flex;
+}
+.main-copy{
+    padding-top: 253px;
+    padding-left: 192px;
+}
+.top-copy{
+    padding-bottom: 44px;
+    text-align: left !important;
+}
+.bottom-copy{
+    padding-bottom: 45px;
+}
+.fv-main-img{
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 8%;
+}
+.fv{
+    background-image: url(../images/circle.png);
+    background-position: top -50px right -120px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -10;
+    height: 700px;
+}
+
+
+/*---------*/
+/*FEATURES---------*/
+/*---------------*/
+.features-inner{
+    text-align: center;
+}
+.section-title{
+    margin-bottom: 10px;
+}
+.section-title-bottom{
+    margin-bottom: 57px;
+}
+.features-title{
+    text-align: center;
+}
+.bl_featuresWrapper{
+    display: flex;
+    margin-top: 49px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 86px;
+}
+
+.features-lead{
+margin-top: 40px;
+}
+
+
+/*---------*/
+/*PRICE---------*/
+/*---------------*/
+.background-color-base{
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: 926px;
+    height: 410px;
+    text-align: left;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+
+}
+.table-title{
+    width: 340px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+}
+.table-tas{
+    border: 1px solid #E5E5E5;
+    padding-left: 20px;
+}
+.price-bottomText{
+    padding-top: 36px;
+}
+
+/*---------*/
+/*FAQ---------*/
+/*---------------*/
+.faq-container{
+    text-align: center;
+}
+.accordionWrapper{
+   height: 100%;
+   
+}
+.accordion{
+    width: 907px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 86px;
+}
+
+.accordion__btn{
+    line-height: 58px;
+    width: 100%;
+    font-size: 1.4rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E5E5E5;
+    cursor:pointer;
+    display: block;
+    outline: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.accordion__text{
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    line-height: 1.8;
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    
+    
+}
+.accordion__text:first-of-type{
+    text-align: left;
+    padding: 17px 0px 30px 35px;
+    font-size: 1.4rem;
+}
+.accordion__body{
+   display: none;
+   
+}
+
+/*---------*/
+/*BLOG---------*/
+/*---------------*/
+.blog-card{
+    display: flex;
+    max-width: 1227px;
+    height: 387px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.blog-cardBody{
+    width: 32%;
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    background-color: #FFFFFF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+}
+
+.blog-card-img img{
+    width: 100%;
+}
+.card-title{
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 14px 0 0 18px;
+}
+.card-date{
+    font-size: 1.6rem;
+    text-align: right;
+    align-items: flex-end;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+
+
+
+
+/*---------*/
+/*WORKS---------*/
+/*---------------*/
+.section-title{
+    text-align: center;
+}
+.section-title-bottom{
+text-align: center;
+}
+.swiper-container{
+    
+    height: 407px;
+}
+
+.swiper-wrapper{
+   width: 1000px;
+   margin:  0 auto;
+    
+}
+.swiper-slide{
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.swiper-slide img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.works-title{
+    font-size: 1.6rem;
+    padding: 10px 10px 30px 10px;
+
+}
+.works-date{
+    font-size: 1.4rem;
+    padding-left: 18px;
+    padding-bottom: 40px;
+}
+
+/*---------*/
+/*contact---------*/
+/*---------------*/
+.section-contactInner {
+    margin-top: 90px;
+}
+.contact-white-text{
+    text-align: center;
+    
+    font-weight: bold;
+}
+.form-wrapper{
+    width: 908px;
+    height: 700px;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 35px 62px;
+    margin: 44px auto 0;
+
+}
+.label-right{
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+.input-text{
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 25px;
+    background: #EEFBFB 0% 0% no-repeat padding-box;
+}
+.textarea{
+    width: 783px;
+    height: 183px;
+    
+}
+.checkbox-item{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-btn{
+    border: none;
+    margin:0 auto;
+}
+.input-text,textarea{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!リセットする*/
+    border: none;
+    outline: none;
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 16px;
+    margin-right: 10px;
+    border: 1px solid #707070;
+}
+.input-text-center,
+.input-text-top{
+    width: 499px;
+    height: 43px;
+}
+.checkbox-text{
+    line-height: 16px;
+}
+
+/*送信ボタンクリック後アクション*/
+.false-message,.end-message {
+      display: none;
+    text-align: center;
+  }
+/*---------*/
+/*footer---------*/
+/*---------------*/
+.footer{
+    text-align: center;
+}
+.footer-title{
+    margin-bottom: 21px;
+}
+.footer-wrapper{
+    margin-bottom: 52px;
+}
+.footer p{
+    display: inline-block;
+}
+.footer p:first-of-type{
+    margin-right: 14.5px;
+}
+.footer p:last-of-type{
+margin-left: 14.5px;
+}
+small{
+font-weight: normal;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/*レスポンシブ--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+@media screen and (max-width:639px) {
+/*スマホ用のcssを記述*/
+/*-------------------------------------------------------*/
+/*ベース--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+.section-inner, 
+.section-blogInner {
+    padding-top: 68px;
+    margin-bottom: 60px;
+}
+.section-inner {
+    padding-bottom: 68px;
+    margin-top: 60px;
+}
+
+/*-------------------------------------------------------*/
+/*レイアウト--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+.fv {
+    margin-bottom: 0px;
+}
+
+.header-btn{
+    display: none;
+}
+.top-copy{
+    text-align: left;
+}
+/*---------*/
+/*sp_header---------*/
+/*---------------*/
+.header-inner{
+    padding: 0 4vw 0;
+    height: 70px;
+    width: 100vw;
+}
+.header-title{
+    font-size: 1.6rem;
+    padding-left: 5px;
+}
+.header-inner img{
+    width: 27px;
+    height: 27px;
+}
+
+
+.header-nav{/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!　jqueryで表示非表示にさせるぷろぱてぃ*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.nav-list{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    padding: 20px 0;
+}
+
+/*ハンバーガーボタン*/
+.burger-btn{
+        
+    display: block;
+    position: absolute;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!　親要素にれらてぃぶを設定市に場合はtop等で右上に配置できる*/
+    top: 22px;
+    right: 4vw;
+    background-color: transparent;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!　背景がなぜか白く設定されているのでこのプロパティで透明に。*/
+    border: none;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!　borderで勝手に立体にされているのでこのプロパティで消す。*/
+}
+.bar{
+    display: block;
+    height: 3px;
+    width:30px;
+    transition: .3s;
+    background-color: #333333;
+}
+.bar_top,
+.bar_mid{
+    margin-bottom: 8px;
+    
+}
+.burger-btn.cross .bar_top{
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+}
+.burger-btn.cross .bar_mid{
+    opacity: 0;
+    transition: .3s;
+}
+.burger-btn.cross .bar_bottom{
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+    
+}
+body.noscroll{
+    overflow: hidden;
+}
+
+
+
+
+/*---------*/
+/*sp_fv---------*/
+/*---------------*/
+.fv{
+    background-image: url(../images/circle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -10;
+    height: 350px;
+}
+.main-copy{
+    padding: 100px 4vw 0;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.top-copy{
+    width: 330px;
+    font-size: 1.6rem;
+    padding-bottom: 18px;
+}
+.bottom-copy{
+    width: 220px;
+    font-size: 0.6rem;
+    padding-bottom: 15px;
+}
+.fv-main-img{
+    width: 100vw;
+    height: 100%;
+    text-align: right;
+    right: 0;
+    z-index: -1;
+    top: 40%;
+    
+}
+.fv-main-img-copy{
+width: 200px;
+}
+
+.fv-btn{
+    width: 100px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+
+/*---------*/
+/*sp_FEATURES---------*/
+/*---------------*/
+.features-inner{
+    text-align: center;
+}
+.section-title{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.section-title-bottom{
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+.features-title{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100vw;
+}
+.features-text{
+    font-size: 1.4rem;
+}
+.features-lead{
+    font-size: 0.8rem;
+}
+.bl_featuresWrapper{
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    
+    text-align: center;
+    margin-top: 20px;
+}
+.features-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+.features-container img{
+    width: 200px;
+}
+
+.features-lead{
+margin-top: 15px;
+}
+.features-img-center{
+    margin-top: 10px;
+}
+
+
+/*---------*/
+/*sp_PRICE---------*/
+/*---------------*/
+.price-bottomText{
+    font-size: 1.3rem;
+}
+table{
+width: 100%;
+margin: 0 auto;
+width: 95vw;
+height: 410px;
+
+}
+tr{
+    height: 50px;
+    border: 1px solid #E5E5E5;
+}
+.table-title,.table-tas{
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+.table-title{
+    width: 100%;
+    padding-top: 25px;
+}
+
+/*---------*/
+/*sp_FAQ---------*/
+/*---------------*/
+
+.accordion{
+    width: 95vw;
+  
+}
+.accordion__btn{
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+.accordion__text:first-of-type{
+    font-size: 1.1rem;
+    padding: 10px 0px 10px 10px; 
+}
+.accordion-wrapper br{
+    display: none;
+}
+.accordion {
+    padding-bottom: 40px;
+}
+
+
+
+/*---------*/
+/*sp_BLOG---------*/
+/*---------------*/
+.blog-card{
+    flex-direction: column;
+    width:95vw;
+    height: 950px;
+}
+.blog-cardBody{
+    width: 100%;
+    height: 32%;
+}
+.card-title{
+    font-size:0.8rem;
+    padding:10px 10px 0 15px;
+}
+.blog-card br{
+    display: none;
+}
+.card-date{
+    font-size: 0.8rem;
+}
+
+/*---------*/
+/*sp_contact---------*/
+/*---------------*/
+.form-wrapper{
+    width: 90vw;
+    
+    padding: 35px 4vw;
+
+
+}
+.input-text{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    background: #EEFBFB 0% 0% no-repeat padding-box;
+
+}
+.textarea{
+    width: 100%;
+    height: 183px;
+    
+}
+.input-text-center,
+.input-text-top{
+    width: 100%;
+    height: 43px;
+}
+
+/*---------*/
+/*sp_footer---------*/
+/*---------------*/
+.footer-wrapper p{
+    font-size: 1.2rem;
+}
+.footer-title{
+    font-size: 1.6rem;
+}
+small{
+    font-size: 1.2rem;
+}
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+/*tablet用のcssを記述*/
+/*---------*/
+/*header---------*/
+/*---------------*/
+.header-inner{
+    padding: 0 4vw 0;
+    width: 100vw;
+}
+
+.header-title{
+    font-size: 2rem;
+    padding-left: 5px;
+}
+.top-copy{
+    text-align: left;
+}
+
+
+.nav-item{
+    padding: 20px 15px;
+    font-size: 1.4rem;
+}
+.nav-item:first-of-type{
+    margin-left: 40px;
+}
+.nav-item:last-of-type{
+    padding-right: 0;
+}
+
+
+
+
+/*---------*/
+/*fv---------*/
+/*---------------*/
+.fv{
+    margin-bottom: 100px;
+}
+.main-copy{
+    padding: 180px 0 0 80px;
+    text-align: left;
+    
+}
+.top-copy{
+    width: 330px;
+    font-size: 2.2rem;
+    padding-bottom: 18px;
+}
+.bottom-copy{
+    width: 220px;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+.fv-main-img{
+    position: relative;
+    top:180px;
+    right: 0px;
+}
+.fv-main-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+}
+.fv{
+    background-image: url(../images/circle.png);
+    background-position: top -350px right -300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -10;
+    
+    height: 500px;
+}
+.fv-btn{
+    width: 100px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+/*---------*/
+/*tab_FEATURES---------*/
+/*---------------*/
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.section-title-bottom{
+    font-size: 1.2rem;
+    
+}
+.features-title{
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100vw;
+}
+.features-text{
+    font-size: 1.4rem;
+}
+.features-lead{
+    font-size: 0.8rem;
+}
+.features-container{
+    width: 100vw;
+    
+}
+.bl_featuresWrapper {
+    width: 600px;
+    margin: 30px auto 50px;
+    
+}
+.bl_featuresWrapper:last-of-type{
+    margin-bottom: 0;
+}
+.features-container img{
+    width: 250px;
+}
+
+/*---------*/
+/*tab_PRICE---------*/
+/*---------------*/
+.background-color-base{
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: 700px;
+    height: 410px;
+    text-align: left;
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.table-title{
+    width: 340px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+}
+.table-tas{
+    border: 1px solid #E5E5E5;
+    padding-left: 20px;
+}
+.price-bottomText{
+    padding-top: 36px;
+}
+
+/*---------*/
+/*tab_FAQ---------*/
+/*---------------*/
+.accordion{
+    width: 700px;
+  
+}
+.accordion-wrapper br{
+    display: none;
+}
+.accordion__text:first-of-type{
+    padding: 15px 15px 15px 15px; 
+}
+/*---------*/
+/*tab_BLOG---------*/
+/*---------------*/
+.blog-card{
+    max-width:730px;
+    height: 250px;
+}
+.blog-cardBody{
+    width: 32%;
+    
+}
+.card-title{
+font-size: 0.8rem;
+padding: 10px 10px 0 15px;
+}
+
+.card-date{
+    font-size: 0.8rem;
+    right: 10px;
+}
+/*---------*/
+/*sp_contact---------*/
+/*---------------*/
+.form-wrapper{
+    width: 90vw;
+    
+    padding: 35px 4vw;
+
+
+}
+.input-text{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    background: #EEFBFB 0% 0% no-repeat padding-box;
+
+}
+.textarea{
+    width: 100%;
+    height: 183px;
+    
+}
+.input-text-center,
+.input-text-top{
+    width: 100%;
+    height: 43px;
+}
+
+}
+  
+@media screen and (min-width:1024px) {
+/*pc用のcssを記述*/
+/*---------*/
+/*header---------*/
+/*--------------*/
+.header-inner{
+    padding: 0 4vw 0;
+}
+
+/*---------*/
+/*fv---------*/
+/*---------------*/
+
+}
